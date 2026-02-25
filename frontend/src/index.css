@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-bold transition-all active:scale-95 text-lg flex items-center justify-center cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-500 shadow-lg shadow-blue-900/20;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-800 text-slate-200 hover:bg-slate-700 border border-slate-700;
+  }
+
+  .btn-danger {
+    @apply bg-red-600 text-white hover:bg-red-500 shadow-lg shadow-red-900/20;
+  }
+
+  .btn-success {
+    @apply bg-emerald-600 text-white hover:bg-emerald-500 shadow-lg shadow-emerald-900/20;
+  }
+
+  .card {
+    @apply bg-slate-900 p-8 rounded-2xl shadow-2xl border border-slate-800;
+  }
+
+  .input-field {
+    @apply w-full p-4 bg-slate-800 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-slate-100 transition-all placeholder:text-slate-500;
+  }
+
+  .table-container {
+    @apply overflow-x-auto bg-slate-900 border border-slate-800 rounded-2xl;
+  }
+
+  th {
+    @apply p-4 bg-slate-800 text-slate-400 font-bold uppercase text-xs border-b border-slate-700;
+  }
+
+  td {
+    @apply p-4 border-b border-slate-800 text-slate-300;
+  }
+
+  .nav-active {
+    @apply bg-blue-600/10 text-blue-400 border border-blue-500/20;
+  }
+}
+
+/* Custom Scrollbar for Black Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-slate-700;
+}
