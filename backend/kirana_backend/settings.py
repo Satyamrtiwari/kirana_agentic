@@ -139,4 +139,6 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
-CORS_ALLOW_ALL_ORIGINS = True # Change in production
+CORS_ALLOWED_ORIGINS = [
+    "https://kirana-agentic-frontend.onrender.com",
+]
