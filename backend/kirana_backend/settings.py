@@ -152,5 +152,11 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    "https://kirana-agentic-frontend.onrender.com",
+    "https://kirana-6bcf0ngf4-satyamtiwari10-9432s-projects.vercel.app",
+]
+
+CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://kirana-6bcf0ngf4-satyamtiwari10-9432s-projects.vercel.app",
 ]
