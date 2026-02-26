@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-tegmj52203ftbm9&$iux0hg81tc*19g915vki+c$67+cmc1_2i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["kirana-agentic.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
